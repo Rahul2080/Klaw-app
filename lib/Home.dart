@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'AddSubject.dart';
 import 'BlogCreation.dart';
+import 'Showing subject.dart';
 import 'Usage.dart';
 import 'UserManagement.dart';
 
@@ -22,7 +23,7 @@ class _HomeState extends State<Home> {
   final List<Widget> _pages = [
     const Usage(),
     const Blogcreation(),
-    const Addsubject(),
+    const ShowingSubject(),
     const Usermanagement(),
   ];
 
@@ -37,7 +38,7 @@ class _HomeState extends State<Home> {
           textAlign: TextAlign.center,
           style: GoogleFonts.notoSans(
               textStyle: TextStyle(
-            color: Color(0xFFB2FFE0),
+            color: Colors.white,
             fontSize: 36.sp,
             fontFamily: 'Noto Sans',
             fontWeight: FontWeight.w700,

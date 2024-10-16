@@ -33,32 +33,37 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                 ),
-                Container(
-                  width: 236.w,
-                  height: 72.h,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF009357),
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(
-                        width: 4.w,
-                        strokeAlign: BorderSide.strokeAlignOutside,
-                        color: Colors.white,
+                Row(
+                  children: [
+                    Container(
+                      width: 236.w,
+                      height: 72.h,
+                      decoration: ShapeDecoration(
+                        color: Color(0xFF009357),
+                        shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                            width: 4.w,
+                            strokeAlign: BorderSide.strokeAlignOutside,
+                            color: Colors.white,
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      'Skip the lag ?',
-                      style: GoogleFonts.notoSans(
-                        textStyle: TextStyle(
-                          color: Colors.white,
-                          fontSize: 32.sp,
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.w600,
+                      child: Center(
+                        child: Text(
+                          'Skip the lag ?',
+                          style: GoogleFonts.notoSans(
+                            textStyle: TextStyle(
+                              color: Colors.white,
+                              fontSize: 32.sp,
+                              fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
                         ),
                       ),
                     ),
-                  ),
+
+                  ],
                 ),
               ],
             ),
@@ -167,7 +172,7 @@ class _LoginState extends State<Login> {
                       padding:  EdgeInsets.only(top: 52.h,left: 37.w),
                       child: Container(
                         width: 196.w,
-                        height: 33.h,
+                        height: 40.h,
                         decoration: ShapeDecoration(
                           color: Color(0xFF009357),
                           shape: RoundedRectangleBorder(
