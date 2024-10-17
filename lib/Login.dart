@@ -63,6 +63,18 @@ class _LoginState extends State<Login> {
                       ),
                     ),
 
+                    SizedBox(width: 500.w,
+                      child: Row(
+                        children: List.generate(150~/5, (index) => Expanded(
+                          child: Container(
+                            color: index%2==0?Colors.transparent
+                                :Color(0xFF009357),
+                            height: 1.9.h,
+                          ),
+                        )),
+                      ),
+                    ),
+
                   ],
                 ),
               ],
@@ -187,6 +199,7 @@ class _LoginState extends State<Login> {
                                 color: Colors.white,
                                 fontSize: 20.sp,
                                 fontWeight: FontWeight.w600,
+                                height: 0.h,
                               ),
                             ),
                           ),
